@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Message } from "semantic-ui-react";
 import { useSelector } from "react-redux";
+import "../UserDashboard/style.css"
 
 
 export const UserDashboard = () => {

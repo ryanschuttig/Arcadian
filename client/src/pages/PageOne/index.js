@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Message } from "semantic-ui-react";
+import "../PageOne/style.css"
 
 
 export const PageOne = () => {
