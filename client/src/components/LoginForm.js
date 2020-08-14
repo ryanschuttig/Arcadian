@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { Button, Form, Message, Segment, Label } from 'semantic-ui-react';
@@ -23,7 +22,6 @@ const LoginForm = (props) => {
 
     return (
         <>
-
             <Form onSubmit={props.handleSubmit(props.onSubmit)} size='large'>
 
                 <Segment>
