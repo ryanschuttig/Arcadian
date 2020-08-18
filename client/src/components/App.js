@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
+import SnakeGamePage from '../pages/SnakeGamePage';
 
 export const App = () => {
 
@@ -28,6 +29,7 @@ export const App = () => {
                     <Route path="/" exact component={Home} />
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
+                    <Route path="/snake" component={SnakeGamePage} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/pageone" component={PageOne} />
                     <Route component={NoMatch} />
