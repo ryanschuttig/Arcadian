@@ -1,15 +1,15 @@
 import React from 'react';
 
-const GameCard = () => {
+const GameCard = ({name, image, href, github, contributor}) => {
   return (
     <div className="ui card">
-      <a className="image" href="/snake">
-        <img src={require("../pages/SnakeGamePage/SnakeThumb.png")} />
+      <a className="image" href={href}>
+        <img src={image} />
       </a>
       <div className="content">
-        <a className="header" href="/snake">Play Snake!</a>
+        <a className="header" href={href}>Play {name}!</a>
         <div className="meta">
-          <a href="https://github.com/ryanschuttig" target="_blank">Contributor: Ryan Schuttig</a>
+          <a href= {github} target="_blank">{contributor}</a>
         </div>
       </div>
     </div>
