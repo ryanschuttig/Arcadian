@@ -1,8 +1,8 @@
 import React from 'react';
 import { Header, Message } from "semantic-ui-react";
 import "../PageOne/style.css";
-import GameCard from "../../components/GameCard"
-
+import GameCard from "../../components/GameCard";
+import GameCardMemory from "../../components/GameCardMemory";
 
 export const PageOne = () => {
     return (
@@ -12,6 +12,7 @@ export const PageOne = () => {
                 <p>Play some awesome games below!</p>
             </Message>
             <GameCard />
+            <GameCardMemory />
         </>
     )
 }
