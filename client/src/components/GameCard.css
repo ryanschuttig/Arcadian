@@ -1,0 +1,19 @@
+.container {
+    justify-content: center;
+    display: flex;
+}
+
+.border {
+    border: 1px solid black !important;
+}
+
+img {
+    height: 290px !important;
+    width: 290px !important;
+}
+
+.ui.card {
+    margin: 0 !important;
+    margin-right: 50px !important;
+    margin-top: 50px !important;
+}
