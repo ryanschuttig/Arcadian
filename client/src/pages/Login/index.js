@@ -29,15 +29,17 @@ const Login = (props) => {
     }
 
     return (
-        <div className="form-container">
-            <Header as='h2' secondary="true" textAlign='center'>
-                Login to your account
+        <div className="loginbackground">
+            <div className="form-container">
+                <Header as='h2' secondary="true" textAlign='center' className="logintext">
+                    Login to your account
                 </Header>
-            <LoginForm
-                renderMessage={renderFormMessage}
-                buttonText="Login"
-                onSubmit={onFormSubmit}
-            />
+                <LoginForm
+                    renderMessage={renderFormMessage}
+                    buttonText="Login"
+                    onSubmit={onFormSubmit}
+                />
+            </div>
         </div>
     )
 }
