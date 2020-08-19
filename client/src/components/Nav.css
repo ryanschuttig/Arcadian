@@ -1,4 +1,6 @@
 .item{
     color:#08F300 !important;
-    background-color: black !important;
+}
+.ui{
+    border-radius: 0px !important;
 }
