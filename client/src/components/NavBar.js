@@ -12,8 +12,15 @@ export const NavBar = () => {
         if (isAuthenticated) {
             return (
                 <>
-                    <Link to="/dashboard" className="item">{currentUser.email}</Link>
-                    <Logout />
+                    <div class="ui inverted menu">
+                        <div class="ui simple dropdown item">
+                            <Link to="/dashboard" className="">{currentUser.email}</Link>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <Logout />
+                            </div>
+                        </div>
+                    </div>
                 </>
             )
         } else {
