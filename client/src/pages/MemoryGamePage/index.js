@@ -3,7 +3,7 @@ import Header from './Header';
 import Card from './Card';
 import GameOver from './GameOver';
 
-import './main.css';
+import './styles/main.css';
 
 class App extends PureComponent {
 
