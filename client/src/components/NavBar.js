@@ -14,9 +14,9 @@ export const NavBar = () => {
                 <>
                     <div class="ui inverted menu">
                         <div class="ui simple dropdown item">
-                            <Link to="/dashboard" className="">{currentUser.email}</Link>
+                            <Link to="/dashboard" className="neon">{currentUser.email}</Link>
                             <i class="dropdown icon"></i>
-                            <div class="menu">
+                            <div class="menu dropbox">
                                 <Logout />
                             </div>
                         </div>
