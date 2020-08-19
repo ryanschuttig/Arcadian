@@ -20,15 +20,17 @@ const Register = () => {
 
     return (
 
-        <div className="form-container">
-            <Header as='h2' secondary="true" textAlign='center'>
-                Register
+        <div className="registerbackground">
+            <div className="form-container">
+                <Header as='h2' secondary="true" textAlign='center' className="registertext">
+                    Register
             </Header>
-            <RegisterForm
-                renderMessage={renderFormMessage}
-                buttonText="Register"
-                onSubmit={onFormSubmit}
-            />
+                <RegisterForm
+                    renderMessage={renderFormMessage}
+                    buttonText="Register"
+                    onSubmit={onFormSubmit}
+                />
+            </div>
         </div>
     )
 }

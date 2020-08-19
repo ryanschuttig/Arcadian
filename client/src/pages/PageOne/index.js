@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Header, Message } from "semantic-ui-react";
 import "../PageOne/style.css";
 import GameCard from "../../components/GameCard";
-// import GameCardMemory from "../../components/GameCardMemory";
 
 export const PageOne = () => {
     const [games, setGames] = useState([
@@ -27,19 +26,21 @@ export const PageOne = () => {
                 <Header size="huge"> ARCADIAN </Header>
                 <p>Play some awesome games below!</p>
             </Message>
-            <div className="container">
-                <div className="row">
-                    {games.length ?
-                        games.map(game => (
-                            <GameCard
-                                href={game.href}
-                                name={game.name}
-                                image={game.image}
-                                github={game.github}
-                                contributor={game.contributor}
-                            />
-                        )) :
-                        "Select a game to play!"}
+            <div className="background">
+                <div className="container">
+                    <div className="row">
+                        {games.length ?
+                            games.map(game => (
+                                <GameCard
+                                    href={game.href}
+                                    name={game.name}
+                                    image={game.image}
+                                    github={game.github}
+                                    contributor={game.contributor}
+                                />
+                            )) :
+                            "Select a game to play!"}
+                    </div>
                 </div>
             </div>
         </>

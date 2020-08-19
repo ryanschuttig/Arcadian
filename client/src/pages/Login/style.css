@@ -1,0 +1,10 @@
+.loginbackground {
+    background-image: url(./asteroids.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logintext {
+    color: white !important;
+}

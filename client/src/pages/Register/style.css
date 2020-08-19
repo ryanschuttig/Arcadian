@@ -1,0 +1,10 @@
+.registerbackground {
+    background-image: url(./pong.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.registertext {
+    color: white !important;
+}
