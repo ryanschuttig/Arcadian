@@ -1,6 +1,6 @@
-/* body {
+body {
     margin: 0;
-    background-color:black;
+   
   }
   
   .grid-container {
@@ -8,6 +8,7 @@
     grid-gap: 1px;
     grid-template-columns: auto auto auto auto;
     padding: 10px 150px 10px 150px;
+    background-color: black;
   }
   
   .grid-header-container {
@@ -79,4 +80,4 @@
   
   .react-card-front {
     position: unset !important;
-  } */
+  }
