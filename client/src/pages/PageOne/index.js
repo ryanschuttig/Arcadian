@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Header, Message } from "semantic-ui-react";
 import "../PageOne/style.css";
 import GameCard from "../../components/GameCard";
-import GameCardMemory from "../../components/GameCardMemory";
+// import GameCardMemory from "../../components/GameCardMemory";
 
 export const PageOne = () => {
     const [games, setGames] = useState([
@@ -13,7 +13,13 @@ export const PageOne = () => {
             "github": "https://github.com/ryanschuttig",
             "contributor": "Contributor: Ryan Schuttig"
         },
-        {}
+        {
+            "name": "Memory Game",
+            "image": require("../MemoryGamePage/memoryPic.png"),
+            "href": "/memory",
+            "github": "https://github.com/Cholmes1994",
+            "contributor": "Contributor: Chris Holmes"
+        }
     ])
     return (
         <>
