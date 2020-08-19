@@ -27,18 +27,20 @@ export const PageOne = () => {
                 <Header size="huge"> ARCADIAN </Header>
                 <p>Play some awesome games below!</p>
             </Message>
-            <div className="row">
-                {games.length ?
-                    games.map(game => (
-                        <GameCard
-                            href={game.href}
-                            name={game.name}
-                            image={game.image}
-                            github={game.github}
-                            contributor={game.contributor}
-                        />
-                    )) :
-                    "Select a game to play!"}
+            <div className="container">
+                <div className="row">
+                    {games.length ?
+                        games.map(game => (
+                            <GameCard
+                                href={game.href}
+                                name={game.name}
+                                image={game.image}
+                                github={game.github}
+                                contributor={game.contributor}
+                            />
+                        )) :
+                        "Select a game to play!"}
+                </div>
             </div>
         </>
     )
