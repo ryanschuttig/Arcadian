@@ -4,3 +4,11 @@
     background-size: cover;
     height: 100vh;
 }
+.message-container{
+    background-color: black !important;
+    color: #08F300 !important;
+}
+
+.textneon{
+    color: #08F300 !important;
+}
