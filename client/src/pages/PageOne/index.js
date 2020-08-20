@@ -23,7 +23,7 @@ export const PageOne = () => {
     return (
         <>
             <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge" className="textneon"> ARCADIAN </Header>
+                <Header size="huge" className="textneon"> Arcadian </Header>
                 <p>Play some awesome games below!</p>
             </Message>
             <div className="background">
@@ -44,6 +44,7 @@ export const PageOne = () => {
                 </div>
             </div>
         </>
+        
     )
 }
 
