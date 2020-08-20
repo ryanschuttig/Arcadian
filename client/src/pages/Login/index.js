@@ -32,7 +32,7 @@ const Login = (props) => {
         <div className="loginbackground">
             <div className="form-container">
                 <Header as='h2' secondary="true" textAlign='center' className="logintext">
-                    Login to your account
+                    Arcadian
                 </Header>
                 <LoginForm
                     renderMessage={renderFormMessage}
