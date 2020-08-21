@@ -14,6 +14,10 @@ const style = {
 
 const Board = ({ square, onClick }) => (
     <div style={style}>
+        {squares.map((square, i) => {
+            <Square value="1" onClick={() => onClick("placeholder")} />
+        })}
+
         <Square value="1" onClick={() => onClick("placeholder")} />
         <Square value="2" onClick={() => onClick("placeholder")} />
         <Square value="3" onClick={() => onClick("placeholder")} />
