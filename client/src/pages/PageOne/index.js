@@ -21,7 +21,7 @@ export const PageOne = () => {
         },
         {
             "name": "Tic Tac Toe",
-            "image": require("../MemoryGamePage/memoryPic.png"),
+            "image": require("../TictacGamePage/tictac.png"),
             "href": "/tictac",
             "github": "https://github.com/Cholmes1994",
             "contributor": "Contributor: Chris Holmes"
