@@ -2,8 +2,8 @@ import React from "react";
 import Square from "./Square"
 
 const style = {
-    border: "4px solid #08F300",
-    borderRadius: "10px",
+    border: "4px solid rgb(13, 13, 233)",
+    borderRadius: "5px",
     width: "500px",
     height: "500px",
     margin: "auto",
