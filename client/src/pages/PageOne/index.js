@@ -18,6 +18,13 @@ export const PageOne = () => {
             "href": "/memory",
             "github": "https://github.com/Cholmes1994",
             "contributor": "Contributor: Chris Holmes"
+        },
+        {
+            "name": "Tic Tac Toe",
+            "image": require("../MemoryGamePage/memoryPic.png"),
+            "href": "/tictac",
+            "github": "https://github.com/Cholmes1994",
+            "contributor": "Contributor: Chris Holmes"
         }
     ])
     return (
