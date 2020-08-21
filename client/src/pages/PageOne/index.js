@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Header, Message } from "semantic-ui-react";
 import "../PageOne/style.css";
 import GameCard from "../../components/GameCard";
+import Footer from "../../components/Footer"
 
 export const PageOne = () => {
     const [games, setGames] = useState([
@@ -47,11 +48,13 @@ export const PageOne = () => {
                                 />
                             )) :
                             "Select a game to play!"}
+                        <Footer />
                     </div>
                 </div>
+
             </div>
         </>
-        
+
     )
 }
 
