@@ -14,6 +14,13 @@ export const PageOne = () => {
             "contributor": "Contributor: Ryan Schuttig"
         },
         {
+            "name": "Tetris",
+            "image": require("../TetrisGamePage/img/TetrisThumb.png"),
+            "href": "/tetris",
+            "github": "https://github.com/ryanschuttig",
+            "contributor": "Contributor: Ryan Schuttig"
+        },
+        {
             "name": "Memory Game",
             "image": require("../MemoryGamePage/memoryPic.png"),
             "href": "/memory",
