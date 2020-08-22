@@ -12,11 +12,11 @@ export const NavBar = () => {
         if (isAuthenticated) {
             return (
                 <>
-                    <div class="ui inverted menu">
-                        <div class="ui simple dropdown item">
+                    <div className="ui inverted menu">
+                        <div className="ui simple dropdown item">
                             <Link to="/dashboard" className="neon">{currentUser.email}</Link>
-                            <i class="dropdown icon"></i>
-                            <div class="menu dropbox">
+                            <i className="dropdown icon"></i>
+                            <div className="menu dropbox">
                                 <Logout />
                             </div>
                         </div>

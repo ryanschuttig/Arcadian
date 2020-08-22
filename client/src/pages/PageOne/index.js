@@ -18,6 +18,13 @@ export const PageOne = () => {
             "href": "/memory",
             "github": "https://github.com/Cholmes1994",
             "contributor": "Contributor: Chris Holmes"
+        },
+        {
+            "name": "Tetris",
+            "image": require("../TetrisGamePage/img/TetrisThumb.png"),
+            "href": "/tetris",
+            "github": "https://github.com/ryanschuttig",
+            "contributor": "Contributor: Ryan Schuttig"
         }
     ])
     return (

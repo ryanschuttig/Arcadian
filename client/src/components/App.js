@@ -12,7 +12,8 @@ import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
 import SnakeGamePage from '../pages/SnakeGamePage';
-import MemoryGamePage from '../pages/MemoryGamePage'
+import MemoryGamePage from '../pages/MemoryGamePage';
+import TetrisGamePage from '../pages/TetrisGamePage';
 
 export const App = () => {
 
@@ -32,6 +33,7 @@ export const App = () => {
                     <Route path="/register" component={Register} />
                     <Route path="/snake" component={SnakeGamePage} />
                     <Route path="/memory" component={MemoryGamePage} />
+                    <Route path="/tetris" component={TetrisGamePage} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/pageone" component={PageOne} />
                     <Route component={NoMatch} />
