@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Header, Message } from "semantic-ui-react";
 import "../PageOne/style.css";
 import GameCard from "../../components/GameCard";
+import Footer from "../../components/Footer"
 
 export const PageOne = () => {
     const [games, setGames] = useState([
@@ -20,11 +21,13 @@ export const PageOne = () => {
             "contributor": "Contributor: Chris Holmes"
         },
         {
-            "name": "Tetris",
-            "image": require("../TetrisGamePage/img/TetrisThumb.png"),
-            "href": "/tetris",
-            "github": "https://github.com/ryanschuttig",
-            "contributor": "Contributor: Ryan Schuttig"
+
+            "name": "Tic Tac Toe",
+            "image": require("../TictacGamePage/tictac.png"),
+            "href": "/tictac",
+            "github": "https://github.com/Cholmes1994",
+            "contributor": "Contributor: Chris Holmes"
+
         }
     ])
     return (
@@ -47,11 +50,13 @@ export const PageOne = () => {
                                 />
                             )) :
                             "Select a game to play!"}
+                        <Footer />
                     </div>
                 </div>
+
             </div>
         </>
-        
+
     )
 }
 
