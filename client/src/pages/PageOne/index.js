@@ -21,11 +21,13 @@ export const PageOne = () => {
             "contributor": "Contributor: Chris Holmes"
         },
         {
+
             "name": "Tic Tac Toe",
             "image": require("../TictacGamePage/tictac.png"),
             "href": "/tictac",
             "github": "https://github.com/Cholmes1994",
             "contributor": "Contributor: Chris Holmes"
+
         }
     ])
     return (
