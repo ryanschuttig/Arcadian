@@ -34,7 +34,6 @@ export const PageOne = () => {
             "href": "/tictac",
             "github": "https://github.com/Cholmes1994",
             "contributor": "Contributor: Chris Holmes"
-
         }
     ])
     return (
@@ -60,7 +59,6 @@ export const PageOne = () => {
                         <Footer />
                     </div>
                 </div>
-
             </div>
         </>
 
