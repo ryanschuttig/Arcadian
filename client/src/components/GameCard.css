@@ -15,5 +15,6 @@ img {
 .ui.card {
     margin: 0 !important;
     margin-right: 50px !important;
-    margin-top: 50px !important;
+    margin-top: 40px !important;
+    margin-bottom: 210px !important;
 }
