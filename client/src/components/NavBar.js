@@ -12,7 +12,7 @@ export const NavBar = () => {
         if (isAuthenticated) {
             return (
                 <>
-                    <div className="ui inverted menu">
+                    <div className="ui inverted menu position">
                         <div className="ui simple dropdown item">
                             <Link to="/dashboard" className="neon">{currentUser.email}</Link>
                             <i className="dropdown icon"></i>
