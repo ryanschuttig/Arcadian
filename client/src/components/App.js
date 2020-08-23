@@ -4,7 +4,7 @@ import history from "../history";
 import { useDispatch } from "react-redux";
 import { loadUser } from "../actions/authActions";
 import NavBar from "./NavBar";
-import Home from "../pages/Home";
+// import Home from "../pages/Home";
 import UserDashboard from "../pages/UserDashboard";
 import PageOne from "../pages/PageOne";
 import Login from "../pages/Login";
@@ -30,7 +30,7 @@ export const App = () => {
             <Router history={history}>
                 <NavBar />
                 <Switch>
-                    <Route path="/" exact component={Home} />
+                    {/* <Route path="/" exact component={Home} /> */}
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
                     <Route path="/snake" component={SnakeGamePage} />
@@ -39,7 +39,7 @@ export const App = () => {
                     <Route path="/tictac" component={Tic} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/pageone" component={PageOne} />
-                    <Route component={NoMatch} />
+                    {/* <Route component={NoMatch} /> */}
                 </Switch>
             </Router>
         </>

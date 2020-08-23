@@ -3,7 +3,7 @@ import bgImage from '../img/bg.png';
 
 export const StyledTetrisWrapper = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 95.5vh;
     background: url(${bgImage}) #000;
     background-size: cover;
     overflow: hidden;
