@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createStage, checkCollision } from './gameHelpers';
 
 // Styled Components
@@ -14,6 +14,7 @@ import { useGameStatus } from './hooks/useGameStatus';
 import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
+import API from '../../utils/API';
 
 const Tetris = () => {
     const [dropTime, setDropTime] = useState(null);
@@ -24,6 +25,19 @@ const Tetris = () => {
     const [score, setScore, rows, setRows, level, setLevel, prevscore, setPrevScore] = useGameStatus(rowsCleared);
 
     console.log('re-render');
+
+    useEffect(() => {
+        getPrevScore()
+    }, [])
+
+    // API
+    function getPrevScore() {
+        API.getTetrisScore()
+        .then(res =>
+            setPrevScore(res.data)
+            )
+            .catch(err => console.log(err));
+    }
 
     const movePlayer = dir => {
         if (!checkCollision(player, stage, { x: dir, y: 0 })) {
@@ -40,7 +54,7 @@ const Tetris = () => {
         setScore(0);
         setRows(0);
         setLevel(0);
-        setPrevScore(0);
+        getPrevScore(0);
     };
 
     const drop = () => {
