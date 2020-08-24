@@ -9,6 +9,7 @@ import {
     DIRECTIONS
 } from "./constants";
 
+
 const SnakeGamePage = () => {
     const canvasRef = useRef();
     const [snake, setSnake] = useState(SNAKE_START);

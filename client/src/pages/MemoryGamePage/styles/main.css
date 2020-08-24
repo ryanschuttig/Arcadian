@@ -76,6 +76,9 @@ body {
   
   .card-back {
     font-weight: bold;
+    justify-content: center !important;
+    vertical-align: middle;
+
   }
   
   .react-card-front {
