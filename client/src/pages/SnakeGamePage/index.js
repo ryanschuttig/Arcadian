@@ -77,7 +77,7 @@ const SnakeGamePage = () => {
         context.clearRect(0, 0, CANVAS_SIZE[0], CANVAS_SIZE[1]);
         context.fillStyle = "#08F300";
         snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
-        context.fillStyle = "rgb(13, 13, 233)";
+        context.fillStyle = "red";
         context.fillRect(apple[0], apple[1], 1, 1);
     }, [snake, apple, gameOver])
 
@@ -87,7 +87,7 @@ const SnakeGamePage = () => {
         <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
             <canvas
                 style={{ border: "1px solid black" }}
-                style={{ background: "black" }}
+                style={{ background: "darkblue" }}
                 ref={canvasRef}
                 width={`${CANVAS_SIZE[0]}px`}
                 height={`${CANVAS_SIZE[1]}px`}
