@@ -6,5 +6,8 @@
 }
 
 .registertext {
-    color: white !important;
+    color: #08F300 !important;
+    font-size: 34px !important;
+    margin-bottom: 40px !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
 }
