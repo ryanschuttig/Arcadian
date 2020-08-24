@@ -5,6 +5,8 @@ import { calculateWinner } from "./winner";
 const styles = {
     width: "200px",
     margin: "20px auto",
+    color: "white",
+    fontSize: "20px"
 }
 
 const Game = () => {
