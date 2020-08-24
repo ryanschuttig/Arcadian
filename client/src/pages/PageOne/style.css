@@ -1,3 +1,10 @@
+body{
+    background: url(https://i.pinimg.com/originals/a3/00/e3/a300e3f1d1eb3e0dcb3903acb5c0db65.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .background {
     background-image: url();
     background-repeat: no-repeat;
@@ -7,6 +14,8 @@
 .message-container{
     background-color: black !important;
     color: #08F300 !important;
+    border-bottom: 2px solid #08F300 !important;
+    border-top: 2px solid #08F300 !important;
 }
 
 .textneon{

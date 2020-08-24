@@ -23,7 +23,7 @@ const Register = () => {
         <div className="registerbackground">
             <div className="form-container">
                 <Header as='h2' secondary="true" textAlign='center' className="registertext">
-                    Register
+                    Register for Arcadian
             </Header>
                 <RegisterForm
                     renderMessage={renderFormMessage}
