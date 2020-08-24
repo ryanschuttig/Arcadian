@@ -5,11 +5,11 @@ var style = {
     borderTop: "2px solid #08F300",
     borderBottom: "2px solid #08F300",
     textAlign: "center",
-    padding: "20px",
+    padding: "10px",
     position: "fixed",
     left: "0",
     bottom: "0",
-    height: "100px",
+    height: "70px",
     width: "100%",
     color: "white"
 }
