@@ -47,7 +47,7 @@ npm install
 
     3.  Run the following command to start the application: npm run dev
     4.  Enjoy..!
-``` 
+
 
 ## Questions
 
