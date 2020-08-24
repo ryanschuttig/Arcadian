@@ -1,16 +1,7 @@
-
-# Boiler Plate - MERN Application with Authentication using JSON Web Tokens (JWT)  
-
-## Online Example & Deployment:
-
-This application was deployed to Heroku services.
--  Link: https://project3-plate.herokuapp.com/
+# Arcadian
 
 ## Description
 
-This is a Boiler Plate MERN application with authentication using JSON Web Tokens. This APP was design to be used as a starting point for any developer looking to integrate authentication with a MERN application.
-
-This application uses JWT to handle Authentication and Redux to handle React state.
 
 ## Web Tools:
 
@@ -33,31 +24,36 @@ npm install
 ```
 
 ## Usage
-``` 
-    To start using this project: 
 
-    1.  Install node modules for Fron-End and Back-End with: npm install
-    2.  Create a .env file at the root location of the project to handle the database credentials and JWT secret:
-    
-        # Database Info
-        DATABASE_INFO = "Your Mongo Credentials"
+## Credits
 
-        #JWT Secret
-        JWT_SECRET = "Your JWT Secret"
+    John Dinsmore
 
-    3.  Run the following command to start the application: npm run dev
-    4.  Enjoy..!
+    Jorge Alvarez
 
+## Contributions
+
+    We highly encourage you to contribute your games to our site! If you wish to work with us please contact one or both of us on Github. Usernames listed below.
+
+    Cholmes1994
+
+    ryanschuttig
+
+## Tests
+
+    None
+
+## Authors
+
+    Christopher Holmes
+
+    Ryan Schuttig
 
 ## Questions
 
-<img src="https://avatars0.githubusercontent.com/u/40499942?v=4" alt="avatar" style="border-radius: 16px" width="30" />
+    If you have any questions, please contact Chris or Ryan on Github.
 
-If you have any questions about the repo, open an issue or contact [jaab30](https://github.com/jaab30) directly at jaab30@yahoo.com.
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaab30/ticketGen)
-
-## images
+## Screenshots
 
 <img src="https://user-images.githubusercontent.com/40499942/86778760-bcfacf80-c028-11ea-9c8c-56fa2f0b5cd7.png" alt="app example" width="600px"/>
 <img src="https://user-images.githubusercontent.com/40499942/86778798-c84dfb00-c028-11ea-914b-70ea02530111.png" alt="app example" width="600px"/>
