@@ -21,7 +21,7 @@ const Tetris = () => {
 
     const [player, updatePlayerPos, resetPlayer, playerRotate] = usePlayer();
     const [stage, setStage, rowsCleared] = useStage(player, resetPlayer);
-    const [score, setScore, rows, setRows, level, setLevel] = useGameStatus(rowsCleared);
+    const [score, setScore, rows, setRows, level, setLevel, prevscore, setPrevScore] = useGameStatus(rowsCleared);
 
     console.log('re-render');
 
@@ -40,6 +40,7 @@ const Tetris = () => {
         setScore(0);
         setRows(0);
         setLevel(0);
+        setPrevScore(0);
     };
 
     const drop = () => {
@@ -113,6 +114,7 @@ const Tetris = () => {
                                 <Display text={`Score: ${score}`} />
                                 <Display text={`Rows: ${rows}`} />
                                 <Display text={`Level: ${level}`} />
+                                <Display text={`Previous Score: ${prevscore}`} />
                             </div>
                         )}
                     <StartButton callback={startGame} />
