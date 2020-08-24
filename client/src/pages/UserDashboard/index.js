@@ -13,6 +13,7 @@ export const UserDashboard = () => {
             <Message className="message-container" size="huge" secondary="true">
                 <Header size="huge" className="textneon"> User Dashboard </Header>
                 {/* <p>Welcome {user ? user.email : ""}!</p> */}
+
             </Message>
         </>
     )
