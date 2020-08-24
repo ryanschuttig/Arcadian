@@ -10,6 +10,12 @@ export default {
     },
     loadUser(headers) {
         return axios.get("/auth/user", headers)
+    },
+    saveTetrisScore: function() {
+        return axios.post();
+    },
+    getTetrisScore: function() {
+        return axios.get();
     }
 
 }

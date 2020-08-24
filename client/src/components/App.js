@@ -10,7 +10,7 @@ import PageOne from "../pages/PageOne";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
-import NoMatch from "../pages/NoMatch";
+// import NoMatch from "../pages/NoMatch";
 import SnakeGamePage from '../pages/SnakeGamePage';
 import TetrisGamePage from '../pages/TetrisGamePage';
 import MemoryGamePage from '../pages/MemoryGamePage';
