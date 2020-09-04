@@ -18,7 +18,7 @@ var style = {
 function Footer() {
   return (
     <div style={style}>
-      <p>If you want to become a contributor please contact us on Github!</p>
+      <p>If you would like to become a contributor, please contact:</p>
       <a href="https://github.com/Cholmes1994" target="_blank">Chris Holmes</a>
       
       <a href="https://github.com/ryanschuttig" target="_blank">Ryan Schuttig</a>

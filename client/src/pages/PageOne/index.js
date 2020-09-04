@@ -11,21 +11,24 @@ export const PageOne = () => {
             "image": require("../SnakeGamePage/SnakeThumb.png"),
             "href": "/snake",
             "github": "https://github.com/ryanschuttig",
-            "contributor": "Contributor: Ryan Schuttig"
+            "contributor": "Contributor: Ryan Schuttig",
+            "language": "React.js"
         },
         {
             "name": "Tetris",
             "image": require("../TetrisGamePage/img/TetrisThumb.png"),
             "href": "/tetris",
             "github": "https://github.com/ryanschuttig",
-            "contributor": "Contributor: Ryan Schuttig"
+            "contributor": "Contributor: Ryan Schuttig",
+            "language": "React.js"
         },
         {
-            "name": "Memory Game",
+            "name": "Memory",
             "image": require("../MemoryGamePage/memoryPic.png"),
             "href": "/memory",
             "github": "https://github.com/Cholmes1994",
-            "contributor": "Contributor: Chris Holmes"
+            "contributor": "Contributor: Chris Holmes",
+            "language": "React.js"
         },
         {
 
@@ -33,7 +36,8 @@ export const PageOne = () => {
             "image": require("../TictacGamePage/tictac.png"),
             "href": "/tictac",
             "github": "https://github.com/Cholmes1994",
-            "contributor": "Contributor: Chris Holmes"
+            "contributor": "Contributor: Chris Holmes",
+            "language": "React.js"
         }
     ])
     return (
@@ -53,6 +57,7 @@ export const PageOne = () => {
                                     image={game.image}
                                     github={game.github}
                                     contributor={game.contributor}
+                                    language={game.language}
                                 />
                             )) :
                             "Select a game to play!"}
