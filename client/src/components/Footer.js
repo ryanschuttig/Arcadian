@@ -21,7 +21,7 @@ function Footer() {
       <p>If you would like to become a contributor, please contact:</p>
       <a href="https://github.com/Cholmes1994" target="_blank">Chris Holmes</a>
       
-      <a href="https://github.com/ryanschuttig" target="_blank">Ryan Schuttig</a>
+      <a href="https://www.ryanschuttig.com/" target="_blank">Ryan Schuttig</a>
     </div>
   );
 }
