@@ -7,7 +7,7 @@ import './styles/main.css';
 
 class MemoryGamePage extends PureComponent {
 
-  state = { 
+  state = {
     isFlipped: Array(16).fill(false),
     shuffledCard: MemoryGamePage.duplicateCard().sort(() => Math.random() - 0.5),
     clickCount: 1,
@@ -16,9 +16,9 @@ class MemoryGamePage extends PureComponent {
   };
 
   static duplicateCard = () => {
-    return ["Galaga","Pacman","Dig Dug","Frogger","Donkey Kong","Super Mario","Tetris","Mortal Combat"].reduce((preValue, current, index, array) => {
+    return ["Galaga", "Pacman", "Dig Dug", "Frogger", "Donkey Kong", "Super Mario", "Tetris", "Mortal Combat"].reduce((preValue, current, index, array) => {
       return preValue.concat([current, current])
-    },[]);
+    }, []);
   };
 
   handleClick = event => {
@@ -26,13 +26,13 @@ class MemoryGamePage extends PureComponent {
     const cardId = event.target.id;
     const newFlipps = this.state.isFlipped.slice();
     this.setState({
-        prevSelectedCard: this.state.shuffledCard[cardId],
-        prevCardId: cardId
+      prevSelectedCard: this.state.shuffledCard[cardId],
+      prevCardId: cardId
     });
 
     if (newFlipps[cardId] === false) {
       newFlipps[cardId] = !newFlipps[cardId];
-      this.setState(prevState => ({ 
+      this.setState(prevState => ({
         isFlipped: newFlipps,
         clickCount: this.state.clickCount + 1
       }));
@@ -84,24 +84,24 @@ class MemoryGamePage extends PureComponent {
 
   render() {
     return (
-     <div>
-       <Header restartGame={this.restartGame} />
-       { this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
-       <div className="grid-container">
-          {
-            this.state.shuffledCard.map((cardNumber, index) => 
-              <Card
-                key={index} 
-                id={index} 
-                cardNumber={cardNumber} 
-                isFlipped={this.state.isFlipped[index]} 
-                handleClick={this.handleClick}     
-              />
-            )
-          }
-        </div>
-       }
-     </div>
+      <div>
+        <Header restartGame={this.restartGame} />
+        {this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
+          <div className="grid-container">
+            {
+              this.state.shuffledCard.map((cardNumber, index) =>
+                <Card
+                  key={index}
+                  id={index}
+                  cardNumber={cardNumber}
+                  isFlipped={this.state.isFlipped[index]}
+                  handleClick={this.handleClick}
+                />
+              )
+            }
+          </div>
+        }
+      </div>
     );
   }
 }

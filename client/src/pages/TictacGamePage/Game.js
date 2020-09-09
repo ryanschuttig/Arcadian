@@ -31,23 +31,23 @@ const Game = () => {
     }
 
     const renderMoves = () => (
-         <button onClick={() => setBoard(Array(9).fill(null))}>
-        Restart
+        <button onClick={() => setBoard(Array(9).fill(null))}>
+            Restart
 
         </button>
 
 
     )
 
-return (
-    <>
-        <Board squares={board} onClick={handleClick} />
-        <div style={styles}>
-            <p>{winner ? "Winner: " + winner : "Next Player: " + (xIsNext ? "X" : "O")}</p>
-            {renderMoves()}
-        </div>
-    </>
-)
+    return (
+        <>
+            <Board squares={board} onClick={handleClick} />
+            <div style={styles}>
+                <p>{winner ? "Winner: " + winner : "Next Player: " + (xIsNext ? "X" : "O")}</p>
+                {renderMoves()}
+            </div>
+        </>
+    )
 }
 
 export default Game;
