@@ -23,6 +23,14 @@ export const PageOne = () => {
             "language": "React.js"
         },
         {
+            "name": "Game of Life",
+            "image": require("../LifeGamePage/lifebg.png"),
+            "href": "/life",
+            "github": "https://github.com/ryanschuttig",
+            "contributor": "Contributor: Ryan Schuttig",
+            "language": "React.js"
+        },
+        {
             "name": "Memory",
             "image": require("../MemoryGamePage/memoryPic.png"),
             "href": "/memory",
