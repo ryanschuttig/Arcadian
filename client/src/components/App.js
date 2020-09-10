@@ -13,6 +13,7 @@ import PrivateRoute from "./PrivateRoute";
 // import NoMatch from "../pages/NoMatch";
 import SnakeGamePage from '../pages/SnakeGamePage';
 import TetrisGamePage from '../pages/TetrisGamePage';
+import LifeGamePage from '../pages/LifeGamePage';
 import MemoryGamePage from '../pages/MemoryGamePage';
 import Tic from '../pages/TictacGamePage';
 
@@ -37,6 +38,7 @@ export const App = () => {
                     <Route path="/memory" component={MemoryGamePage} />
                     <Route path="/tetris" component={TetrisGamePage} />
                     <Route path="/tictac" component={Tic} />
+                    <Route path="/life" component={LifeGamePage} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/pageone" component={PageOne} />
                     {/* <Route component={NoMatch} /> */}
