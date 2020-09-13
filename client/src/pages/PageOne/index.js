@@ -69,9 +69,9 @@ export const PageOne = () => {
                                 />
                             )) :
                             "Select a game to play!"}
-                        <Footer />
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
 

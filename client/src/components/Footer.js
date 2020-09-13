@@ -6,7 +6,6 @@ var style = {
   borderBottom: "2px solid #08F300",
   textAlign: "center",
   padding: "10px",
-  position: "fixed",
   left: "0",
   bottom: "0",
   height: "70px",
