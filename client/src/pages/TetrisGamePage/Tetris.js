@@ -33,8 +33,8 @@ const Tetris = () => {
     // API
     function getPrevScore() {
         API.getTetrisScore()
-        .then(res =>
-            setPrevScore(res.data)
+            .then(res =>
+                setPrevScore(res.data)
             )
             .catch(err => console.log(err));
     }
