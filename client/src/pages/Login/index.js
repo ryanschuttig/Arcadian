@@ -6,7 +6,6 @@ import { loginUser } from "../../actions/authActions";
 import { Link } from "react-router-dom";
 import "../Login/style.css"
 
-
 const Login = (props) => {
     // access to the isAuthenticated property from the auth reducer state
     const { isAuthenticated } = useSelector(state => state.auth)
@@ -17,7 +16,6 @@ const Login = (props) => {
         if (isAuthenticated) {
             props.history.push("/pageone")
         }
-
     })
 
     const renderFormMessage = () => {
