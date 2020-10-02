@@ -15,8 +15,6 @@
 
 * [Usage](#usage)
 
-
-
 ## Installation
 
     The creation of this app required the installation of the following dependencies.
@@ -50,23 +48,13 @@
 
     npm run dev
 
-## Credits
-
-    John Dinsmore
-
-    Jorge Alvarez
-
 ## Contributions
 
-    We highly encourage you to contribute your games to our site! If you wish to work with us please contact one or both of us on Github. Usernames listed below.
+    We highly encourage you to contribute your games to our site! If you wish to work with us please contact one or both of us below.
 
-    Cholmes1994
+    https://github.com/Cholmes1994
 
-    ryanschuttig
-
-## Tests
-
-    None
+    https://www.ryanschuttig.com/
 
 ## Authors
 
@@ -76,7 +64,7 @@
 
 ## Questions
 
-    If you have any questions, please contact Chris or Ryan on Github.
+    If you have any questions, please contact Chris or Ryan.
 
 ## Link to Deployed Site
 
