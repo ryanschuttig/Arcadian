@@ -17,9 +17,18 @@ if (process.env.NODE_ENV === "production") {
 };
 
 // connect to Mongo DB 
-mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true })
-    .then(() => console.log(`Mongo DB Succesfully Connected`))
-    .catch(err => console.log(err));
+// mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true })
+//     .then(() => console.log(`Mongo DB Succesfully Connected`))
+//     .catch(err => console.log(err));
+mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost/Arcadian',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
 
 // use routes
 app.use(routes);
